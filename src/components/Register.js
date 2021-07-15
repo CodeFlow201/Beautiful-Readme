@@ -11,8 +11,8 @@ import {
   Link,
   VStack,
 } from "@chakra-ui/react";
-import { RiAccountPinBoxFill } from "react-icons/ri";
-import { RiLockPasswordFill } from "react-icons/ri";
+import { BsFillPersonFill } from "react-icons/bs";
+import { BsFillLockFill} from "react-icons/bs";
 
 function Register() {
   return (
@@ -31,9 +31,10 @@ function Register() {
               fontSize="1.2rem"
               color="blue.500"
               fontWeight="semibold"
-              py={3}
+              className="Register_Here"
+              data-text="Register_Here..."
             >
-              Register HERE
+              Register_Here... 
             </Heading>
             <InputGroup w="95%" borderRadius="full">
               <Input
@@ -55,7 +56,7 @@ function Register() {
                 margin="0 20px"
                 pointerEvents="none"
                 children={
-                  <RiAccountPinBoxFill color="#C6C6E8" fontSize="2.1rem" />
+                  <BsFillPersonFill color="#C6C6E8" fontSize="1.6rem" />
                 }
               />
               <Input
@@ -75,7 +76,7 @@ function Register() {
                 margin="0 20px"
                 pointerEvents="none"
                 children={
-                  <RiLockPasswordFill color="#C6C6E8" fontSize="2.1rem" />
+                  <BsFillLockFill color="#C6C6E8" fontSize="1.4rem" />
                 }
               />
               <Input
@@ -95,7 +96,7 @@ function Register() {
                 margin="0 20px"
                 pointerEvents="none"
                 children={
-                  <RiLockPasswordFill color="#C6C6E8" fontSize="2.1rem" />
+                  <BsFillLockFill color="#C6C6E8" fontSize="1.4rem" />
                 }
               />
               <Input
